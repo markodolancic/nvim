@@ -81,3 +81,15 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 })
 
 vim.api.nvim_set_option('clipboard', 'unnamedplus')
+
+vim.filetype.add({
+	extension = {
+		env = "sh"
+	},
+	filename = {
+		[".env"] = "sh",
+	},
+	pattern = {
+		["%.env%.[%w_.-]+"] = "sh",
+	},
+})
