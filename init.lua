@@ -34,7 +34,7 @@ vim.opt.cursorline = true
 vim.cmd.colorscheme('catppuccin')
 
 vim.api.nvim_set_hl(0, "CursorLine", {
-    bg = "#303040",
+    bg = "#2a2b3d",
 })
 
 vim.cmd [[
