@@ -80,7 +80,7 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 	callback = function() vim.highlight.on_yank() end,
 })
 
-vim.opt.clipboard:append { 'unnamed', 'unnamedplus' }
+vim.g.clipboard = 'unnamedplus'
 
 vim.filetype.add({
 	extension = {
