@@ -29,8 +29,13 @@ vim.opt.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
 vim.opt.guifont = 'Iosevka:h35'
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
+vim.opt.cursorline = true
 
 vim.cmd.colorscheme('catppuccin')
+
+vim.api.nvim_set_hl(0, "CursorLine", {
+    bg = "#303040",
+})
 
 vim.cmd [[
     aunmenu PopUp
