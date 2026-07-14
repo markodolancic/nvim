@@ -80,8 +80,8 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 	callback = function() vim.highlight.on_yank() end,
 })
 
+vim.g.clipboard = "osc52"
 vim.opt.clipboard = "unnamedplus"
-vim.g.clipboard = require('vim.ui.clipboard.osc52')
 
 vim.filetype.add({
 	extension = {
